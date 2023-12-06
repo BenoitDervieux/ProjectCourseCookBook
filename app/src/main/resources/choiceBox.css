@@ -1,0 +1,13 @@
+.choice-box {
+    -fx-background-color: white;
+    -fx-border-color: #CCCCCC;
+    -fx-font-family: "Roboto Light";
+    -fx-prompt-text-fill: gray;
+    -fx-font-size: 12px;
+}
+
+.choice-box .label {
+    -fx-font-size: 14px;
+    -fx-font-family: "Roboto Light";
+
+}

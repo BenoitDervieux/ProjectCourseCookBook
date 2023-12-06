@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="PaneBack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.RightMenu">
+   <children>
+      <Rectangle fx:id="GreyRect" arcHeight="5.0" arcWidth="5.0" fill="#757575" height="880.0" onMouseClicked="#deployAdmin" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1200.0" />
+      <Rectangle fx:id="WhiteRect" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="880.0" layoutX="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" x="925.0" />
+      <HBox fx:id="settingHBox" alignment="CENTER_LEFT" layoutX="935.0" layoutY="75.0" prefHeight="50.0" prefWidth="245.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0">
+               <image>
+                  <Image url="@util/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="settingTitle" style="-fx-font-weight: 800;" text="Settings">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="nameLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="947.0" layoutY="28.0" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #0000;" text="User Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="30.0" fitWidth="30.0" layoutX="1091.0" layoutY="26.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@images/def.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="menuIcon" fitHeight="25.0" fitWidth="25.0" layoutX="1151.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@util/menu.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <HBox fx:id="helpHBox" alignment="CENTER_LEFT" layoutX="935.0" layoutY="275.0" prefHeight="50.0" prefWidth="245.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0">
+               <image>
+                  <Image url="@images/info-center.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="helpLabel" style="-fx-font-weight: 500;" styleClass="admin" text="Help">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </HBox>
+      <HBox fx:id="adminHBox" alignment="CENTER_LEFT" layoutX="935.0" layoutY="655.0" prefHeight="50.0" prefWidth="245.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0">
+               <image>
+                  <Image url="@util/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="adminLabel" style="-fx-font-weight: 500;" styleClass="admin" text="Admin Panel">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </HBox>
+      <HBox fx:id="exitHBox" alignment="CENTER_LEFT" layoutX="935.0" layoutY="735.0" prefHeight="50.0" prefWidth="245.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="exitLabel" style="-fx-font-weight: 500;" styleClass="admin" text="Logout">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </HBox>
+      <HBox fx:id="userMessages" alignment="CENTER_LEFT" layoutX="935.0" layoutY="195.0" prefHeight="50.0" prefWidth="245.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@util/chat.png" />
+               </image>
+            </ImageView>
+            <Label style="-fx-font-weight: 500;" text="Messages">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</Pane>

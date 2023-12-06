@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="paneAdminCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="700.0" style="-fx-background-color: #f1f3f5; -fx-border-width: 0 0 1 0; -fx-border-color: #adb5bd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.CardsModifyDeleteUserController">
+   <children>
+      <ImageView fx:id="imageProfile" fitHeight="40.0" fitWidth="39.0" layoutX="12.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/def.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nameField" layoutX="96.0" layoutY="12.0" prefHeight="20.0" prefWidth="116.0" />
+      <Label fx:id="nameLabel" layoutX="96.0" layoutY="12.0" prefHeight="20.0" prefWidth="115.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" layoutX="226.0" layoutY="12.0" prefHeight="20.0" prefWidth="205.0" />
+      <Label fx:id="emailLabel" layoutX="226.0" layoutY="12.0" prefHeight="20.0" prefWidth="205.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passwordField" accessibleRole="PASSWORD_FIELD" layoutX="456.0" layoutY="12.0" prefHeight="20.0" prefWidth="150.0" />
+      <Label fx:id="passwordLabel" layoutX="456.0" layoutY="12.0" prefHeight="20.0" prefWidth="150.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="7.0" opacity="0.5" prefWidth="10.0" text="|">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="7.0" opacity="0.5" prefWidth="10.0" text="|">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="7.0" opacity="0.5" prefWidth="10.0" text="|">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="618.0" layoutY="7.0" opacity="0.5" prefWidth="10.0" text="|">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="deleteImage" fitHeight="10.0" fitWidth="10.0" layoutX="659.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/remove.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="redCircle" fill="#ff1f1f" layoutX="664.0" layoutY="23.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fx:id="hoverCircle" fill="#220909" layoutX="664.0" layoutY="23.0" opacity="0.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+   </children>
+</Pane>

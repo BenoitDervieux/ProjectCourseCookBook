@@ -1,0 +1,11 @@
+.slider .track {
+    -fx-background-color: linear-gradient(to right, green, gray);
+}
+
+.slider .thumb {
+    -fx-background-color: transparent;
+}
+
+.slider .thumb:hover {
+    -fx-background-color: transparent;
+}

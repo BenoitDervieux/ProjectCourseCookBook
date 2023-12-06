@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefWidth="780.0" spacing="20.0" style="-fx-background-color: white;" stylesheets="@ViewRecipe.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.ViewRecipeController">
+   <children>
+      <HBox fx:id="tagBox" alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="35.0" prefWidth="569.0" style="-fx-background-color: #ffff; -fx-spacing: 10;">
+         <children>
+            <Label prefHeight="34.0" prefWidth="53.0" text="Tags:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="editTagsBtn" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#addCommentButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@util/create%20new%20recipe.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <HBox fx:id="tagContainer" minHeight="-Infinity" prefHeight="30.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="16.0" />
+         </padding>
+      </HBox>
+      <ImageView fx:id="heroImage" fitHeight="325.0" fitWidth="740.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 50; -fx-background-radius: 50;" />
+      <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="750.0" style="-fx-spacing: 20; -fx-background-color: #f1f3f5; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="nameLabel" prefHeight="70.0" prefWidth="680.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="addToFavoriteBtn" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#favoriteButtonHandler" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@util/empty_heart.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+         <effect>
+            <DropShadow offsetY="3.0">
+               <color>
+                  <Color opacity="0.14000000059604645" />
+               </color>
+            </DropShadow>
+         </effect>
+      </HBox>
+      <VBox prefWidth="570.0" style="-fx-background-color: #f1f3f5; -fx-background-radius: 10;">
+         <children>
+            <Label prefHeight="33.0" prefWidth="180.0" text="Description">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtAreaDesc" editable="false" minHeight="-Infinity" prefHeight="130.0" prefWidth="200.0" stylesheets="@t_Area.css" wrapText="true" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <effect>
+            <DropShadow offsetY="3.0">
+               <color>
+                  <Color opacity="0.14000000059604645" />
+               </color>
+            </DropShadow>
+         </effect>
+      </VBox>
+      <VBox fx:id="ingredientsVBox" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #f1f3f5; -fx-background-radius: 10;">
+         <children>
+            <HBox style="-fx-spacing: 20;">
+               <children>
+                  <Label prefHeight="47.0" prefWidth="257.0" text="Ingredients">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="350.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <HBox fx:id="buttonHBox" alignment="CENTER" prefHeight="66.0" prefWidth="150.0">
+                     <children>
+                        <Button fx:id="minusPortionBtn" alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#decreaseCount" prefHeight="30.0" prefWidth="35.0" stylesheets="@Button3.css" text="-" textAlignment="CENTER">
+                           <font>
+                              <Font name="Roboto Black" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="portionText" alignment="CENTER" minHeight="-Infinity" prefHeight="30.0" prefWidth="40.0" stylesheets="@t_F.css">
+                           <font>
+                              <Font name="Roboto Regular" size="16.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="plusPortionBtn" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#increaseCount" prefHeight="39.0" prefWidth="37.0" stylesheets="@Button3.css" text="+">
+                           <font>
+                              <Font name="Roboto Black" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox fx:id="ingredientsContainer" prefHeight="0.0" prefWidth="730.0" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+         <effect>
+            <DropShadow offsetY="3.0">
+               <color>
+                  <Color opacity="0.14000000059604645" />
+               </color>
+            </DropShadow>
+         </effect>
+      </VBox>
+      <VBox fx:id="instructionsVBox" prefWidth="569.0" style="-fx-spacing: 5; -fx-background-color: #f1f3f5; -fx-background-radius: 10;">
+         <children>
+            <HBox alignment="CENTER_LEFT" style="-fx-spacing: 20;">
+               <children>
+                  <Label prefHeight="47.0" prefWidth="198.0" text="Instructions">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox fx:id="instructionsContainer" prefHeight="0.0" prefWidth="730.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+         <effect>
+            <DropShadow offsetY="3.0">
+               <color>
+                  <Color opacity="0.14000000059604645" />
+               </color>
+            </DropShadow>
+         </effect>
+      </VBox>
+      <VBox fx:id="commentVBox" style="-fx-spacing: 10; -fx-background-color: #f1f3f5; -fx-background-radius: 10;">
+         <children>
+            <HBox alignment="CENTER_LEFT" style="-fx-spacing: 20;">
+               <children>
+                  <Label prefHeight="47.0" prefWidth="169.0" text="Comments">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="addComment" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#addCommentButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/create%20new%20recipe.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox fx:id="commentVContainer" prefHeight="0.0" prefWidth="730.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+         <effect>
+            <DropShadow offsetY="3.0">
+               <color>
+                  <Color opacity="0.14000000059604645" />
+               </color>
+            </DropShadow>
+         </effect>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" style="-fx-spacing: 20; -fx-background-color: #f1f3f5; -fx-background-radius: 10;">
+         <children>
+            <Label prefHeight="47.0" prefWidth="167.0" text="My rating:">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="36.0" prefWidth="206.0" spacing="23.0">
+               <children>
+                  <SVGPath fx:id="oneStar" content="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" scaleX="2.0" scaleY="2.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></SVGPath>
+                  <SVGPath fx:id="twoStar" content="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" scaleX="2.0" scaleY="2.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></SVGPath>
+                  <SVGPath fx:id="threeStar" content="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" scaleX="2.0" scaleY="2.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></SVGPath>
+                  <SVGPath fx:id="fourStar" content="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" scaleX="2.0" scaleY="2.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></SVGPath>
+                  <SVGPath fx:id="fiveStar" content="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" scaleX="2.0" scaleY="2.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></SVGPath>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+         <effect>
+            <DropShadow offsetY="3.0">
+               <color>
+                  <Color opacity="0.14000000059604645" />
+               </color>
+            </DropShadow>
+         </effect>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="20.0" right="20.0" top="5.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,3 @@
+.hbox-pressed:pressed {
+    -fx-background-color: #cfcfcf;
+}

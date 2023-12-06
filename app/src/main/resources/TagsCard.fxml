@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="tagBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="250.0" styleClass="border-pane" stylesheets="@BorderPane.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.AddTagController">
+   <center>
+      <VBox fx:id="tagVBox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="185.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox prefHeight="69.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="errorMsgHBox" prefHeight="30.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="193.0" spacing="60.0">
+               <children>
+                  <Button fx:id="addTagButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="53.0" styleClass="button-pressed" text="ADD" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Roboto Black" size="14.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@Button.css" />
+                        <URL value="@ButtonPressed.css" />
+                     </stylesheets>
+                  </Button>
+                  <Button fx:id="saveTagBtn" alignment="CENTER_RIGHT" mnemonicParsing="false" styleClass="button-pressed" text="SAVE" HBox.hgrow="NEVER">
+                     <font>
+                        <Font name="Roboto Black" size="14.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@Button.css" />
+                        <URL value="@ButtonPressed.css" />
+                     </stylesheets>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <VBox prefHeight="64.0" prefWidth="250.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="199.0" styleClass="hbox">
+               <children>
+                  <Label text="TAGS">
+                     <font>
+                        <Font name="Roboto Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="235.0">
+               <children>
+                  <TextField fx:id="tagName" minHeight="-Infinity" prefHeight="36.0" prefWidth="207.0" promptText="Enter a tag" styleClass="text-field" stylesheets="@textFieldNoshadow.css">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Roboto Light" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </top>
+</BorderPane>

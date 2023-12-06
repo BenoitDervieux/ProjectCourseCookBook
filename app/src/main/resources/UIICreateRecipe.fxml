@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="964.0" prefWidth="720.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fill="#dee2e6" height="964.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="720.0" />
+      <Rectangle arcHeight="45.0" arcWidth="45.0" fill="WHITE" height="944.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0" />
+      <Rectangle arcHeight="47.0" arcWidth="43.0" fill="#dee2e6" height="323.0" layoutX="40.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="637.0" />
+      <Label layoutX="303.0" layoutY="233.0" style="-fx-background-color: #228be6; -fx-padding: 5 15 5 15; -fx-background-radius: 5;" text="ADD IMAGE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="427.0" text="Name">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="40.0" layoutY="463.0" prefHeight="36.0" prefWidth="611.0" style="-fx-background-color: #f1f3f5;" text="Enter the recipe's name" />
+      <Label layoutX="42.0" layoutY="47.0" text="Tags :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="517.0" text="Description">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="40.0" layoutY="547.0" prefHeight="62.0" prefWidth="611.0" style="-fx-background-color: #f1f3f5;" text="Add a description" />
+      <Label layoutX="40.0" layoutY="627.0" text="Instructions">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="442.0" layoutY="889.0" style="-fx-background-color: #ffd43b; -fx-padding: 5 20 5 20; -fx-background-radius: 5;" text="SAVE THE RECIPE" textFill="#2e2e2e">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow offsetY="4.0">
+               <color>
+                  <Color opacity="0.14589665830135345" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="40.0" layoutY="661.0" text="Click to enter the instructions" textFill="DIMGRAY" />
+      <TextField alignment="CENTER" layoutX="67.0" layoutY="752.0" prefHeight="20.0" prefWidth="82.0" style="-fx-background-color: #f1f3f5;" text="4 persons">
+         <effect>
+            <DropShadow height="10.0" radius="4.5" spread="0.5" width="10.0">
+               <color>
+                  <Color opacity="0.1599999964237213" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#ff90a8" height="20.0" layoutX="104.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="161.0" layoutY="755.0">
+         <image>
+            <Image url="@../../../../../../../../Downloads/plus%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="42.0" layoutY="755.0">
+         <image>
+            <Image url="@../../../../../../../../Downloads/minus.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="707.0" text="Ingredients">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="791.0" text="Click to add ingredients" textFill="DIMGRAY" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="104.0" layoutY="50.0" opacity="0.66">
+         <image>
+            <Image url="@../../../../../../../../Downloads/add.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

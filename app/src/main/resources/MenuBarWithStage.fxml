@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1037.0" prefWidth="1512.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.LeftMenuController">
+   <top>
+      <HBox prefHeight="109.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <VBox prefHeight="792.0" prefWidth="329.0" styleClass="white-background" stylesheets="@MenuBar.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="382.0" prefWidth="299.0" spacing="30.0">
+               <children>
+                  <HBox fx:id="homeButton" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#homeButtonClicked" prefHeight="50.0" prefWidth="300.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/Home.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="35.0" prefWidth="232.0" text="Home">
+                           <font>
+                              <Font name="Roboto Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="weekSelectionButton" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#weekSelectionClicked" prefHeight="50.0" prefWidth="300.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/weeklyList.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="35.0" prefWidth="232.0" text="Week's selection">
+                           <font>
+                              <Font name="Roboto Regular" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="browseButton" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#browseClicked" prefHeight="50.0" prefWidth="300.0" spacing="20.0" stylesheets="@MenuBar.css">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/Browse.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="35.0" prefWidth="232.0" text="Browse">
+                           <font>
+                              <Font name="Roboto Regular" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="mouse-moved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="byIngredientButton" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#byIngredientClicked" prefHeight="50.0" prefWidth="300.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/ingredients.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="35.0" prefWidth="232.0" text="By ingredients">
+                           <font>
+                              <Font name="Roboto Regular" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="byTagButton" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#byTagClicked" prefHeight="50.0" prefWidth="300.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/Tag.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="35.0" prefWidth="232.0" text="By tags">
+                           <font>
+                              <Font name="Roboto Regular" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="256.0" prefWidth="390.0" spacing="30.0">
+               <children>
+                  <HBox fx:id="newRecipe" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#createRecipeClicked" prefHeight="60.0" prefWidth="300.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/create%20new%20recipe.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="74.0" prefWidth="232.0" text="Create a new&#10;recipe">
+                           <font>
+                              <Font name="Roboto Regular" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="weeklyDinnerList" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#weeklyDinnerClicked" prefHeight="63.0" prefWidth="300.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/create%20new%20recipe.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="103.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Create a weekly&#10;dinner list">
+                           <font>
+                              <Font name="Roboto Regular" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="30.0" left="30.0" top="30.0" />
+               </padding>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0" stylesheets="@MenuBar.css">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="385.0" stylesheets="@MenuBar.css" text="Weekly routines">
+                           <font>
+                              <Font name="Roboto Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <HBox fx:id="beachBody" alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+                           <children>
+                              <Label onMouseClicked="#beachBodyClicked" prefHeight="35.0" prefWidth="393.0" styleClass="mouse-moved" stylesheets="@MenuBar.css" text="Beach body without constraint">
+                                 <font>
+                                    <Font name="Roboto Regular" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="30.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets bottom="10.0" />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+                           <children>
+                              <Label fx:id="getFit" onMouseClicked="#getFitClicked" prefHeight="35.0" prefWidth="393.0" styleClass="mouse-moved" stylesheets="@MenuBar.css" text="Get fit or get lost">
+                                 <font>
+                                    <Font name="Roboto Regular" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="30.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets bottom="10.0" />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+                           <children>
+                              <Label fx:id="secretPleasure" onMouseClicked="#secretPleasureClicked" prefHeight="35.0" prefWidth="393.0" styleClass="mouse-moved" stylesheets="@MenuBar.css" text="My secret pleasures">
+                                 <font>
+                                    <Font name="Roboto Regular" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="30.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets bottom="10.0" />
+                           </opaqueInsets>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox fx:id="shoppingList" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#ShoppingListClicked" prefHeight="50.0" prefWidth="300.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/Shopping%20Cart.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Shopping list">
+                           <font>
+                              <Font name="Roboto Regular" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="30.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <HBox maxHeight="-Infinity" prefHeight="927.0" prefWidth="1183.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="50.0" prefWidth="1183.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="921.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Week 32">
+                           <font>
+                              <Font name="Roboto Bold" size="30.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" onMouseClicked="#calendarClicked" prefHeight="50.0" prefWidth="77.0" styleClass="mouse-moved" stylesheets="@MenuBar.css" HBox.hgrow="NEVER">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/Calendar.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

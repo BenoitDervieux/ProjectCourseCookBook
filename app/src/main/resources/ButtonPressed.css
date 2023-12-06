@@ -1,0 +1,3 @@
+.button-pressed:pressed {
+    -fx-background-color: #FFC700;
+}

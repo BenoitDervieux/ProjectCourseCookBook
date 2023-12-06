@@ -1,0 +1,16 @@
+#comment-area{
+  -fx-background-color: #f1f3f5, #f1f3f5;
+  -fx-text-fill: white;
+}
+
+#comment-area .content{
+  -fx-background-radius: 15px;
+  -fx-border-radius: 15px;
+  -fx-background-color: #4180ec;
+}
+
+.comment-area:focused .content {
+  -fx-background-radius: 15px;
+  -fx-border-radius: 15px;
+  -fx-background-color: #4180ec;
+}

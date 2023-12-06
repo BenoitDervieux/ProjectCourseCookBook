@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="instructionBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="630.0" styleClass="border-pane" stylesheets="@BorderPane.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.AddInstructionController">
+   <center>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="349.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="instructionVBox" alignment="TOP_CENTER" prefHeight="323.0" prefWidth="620.0" styleClass="border-pane" stylesheets="@BorderPane.css">
+               <padding>
+                  <Insets top="2.0" />
+               </padding>
+            </VBox>
+         </content>
+         <stylesheets>
+            <URL value="@BorderPane.css" />
+            <URL value="@ScrollBar.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="border-pane" />
+            <String fx:value="scroll-bar" />
+         </styleClass>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <VBox prefHeight="70.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="instructionErrorMsgHBox" prefHeight="30.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="410.0" spacing="150.0">
+               <children>
+                  <Button fx:id="addInstructionBtn" mnemonicParsing="false" prefHeight="27.0" prefWidth="53.0" text="ADD" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Roboto Black" size="14.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@Button.css" />
+                        <URL value="@MenuBar.css" />
+                     </stylesheets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="saveInstruction" alignment="CENTER_RIGHT" mnemonicParsing="false" stylesheets="@MenuBar.css" text="SAVE" HBox.hgrow="NEVER">
+                     <font>
+                        <Font name="Roboto Black" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <VBox prefHeight="95.0" prefWidth="610.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="410.0" styleClass="hbox">
+               <children>
+                  <Label text="INSTRUCTIONS">
+                     <font>
+                        <Font name="Roboto Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="instructionHBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="607.0">
+               <children>
+                  <TextField fx:id="instructionTextField" alignment="BOTTOM_RIGHT" minHeight="-Infinity" onKeyTyped="#instructionCounter" prefHeight="35.0" prefWidth="615.0" promptText="Enter an instruction" styleClass="text-field" stylesheets="@textFieldNoshadow.css">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Roboto Light" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="counterLabel" alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="610.0">
+               <children>
+                  <Label fx:id="counterLBL" />
+               </children>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+</BorderPane>

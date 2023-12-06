@@ -1,0 +1,5 @@
+.mouse-moved: hover{
+    -fx-background-color: #e4e4e4;
+    -fx-padding: 4px 16px 8px 16px;
+    -fx-background-radius: 10px;
+}

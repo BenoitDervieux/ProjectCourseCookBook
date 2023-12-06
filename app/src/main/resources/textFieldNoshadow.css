@@ -1,0 +1,10 @@
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-padding: 8px;
+    -fx-alignment: center;
+}
+
+.text-field:focused {
+    -fx-border-color: #4d90fe;
+}

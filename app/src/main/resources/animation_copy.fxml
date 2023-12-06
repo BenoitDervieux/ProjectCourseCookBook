@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parentContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.AnimationBeginning">
+   <children>
+      <Pane fx:id="myPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="800.0" prefWidth="1200.0" style="-fx-scale-x: 100%; -fx-scale-y: 100%;">
+         <children>
+            <Circle fx:id="circleOne" layoutX="600.0" layoutY="350.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fx:id="circleTwo" fill="WHITE" layoutX="600.0" layoutY="350.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fx:id="ther" fitHeight="156.0" fitWidth="156.0" layoutX="589.0" layoutY="150.0" opacity="0.0">
+               <image>
+                  <Image url="@images/R.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pizza" fitHeight="283.0" fitWidth="283.0" layoutX="456.0" layoutY="14.0" opacity="0.0" rotate="-18.0">
+               <image>
+                  <Image url="@images/pizzaBig.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="recipro" fitHeight="153.0" fitWidth="500.0" layoutX="375.0" layoutY="400.0" opacity="0.0">
+               <image>
+                  <Image url="@images/recipro.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="819.0" layoutX="-11.0" layoutY="-9.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="1221.0" />
+      <Button fx:id="butStartCooking" alignment="CENTER" contentDisplay="TOP" layoutX="375.0" layoutY="550.0" mnemonicParsing="false" onAction="#loadSecond" opacity="0.0" prefHeight="51.0" prefWidth="500.0" style="-fx-background-color: none; -fx-text-fill: #247AFD; -fx-cursor: hand;" text="Start cooking">
+         <font>
+            <Font name="Segoe MDL2 Assets" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

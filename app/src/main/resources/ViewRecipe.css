@@ -1,0 +1,41 @@
+.text-area {
+  -fx-background-insets: 0;
+  -fx-background-color: transparent, white, transparent, white;
+  -fx-text-box-border: transparent;
+  -fx-text-alignment: left;
+
+}
+
+.text-area .content {
+  -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused .content {
+  -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+  -fx-highlight-fill: white;
+}
+
+.text-area .content {
+  -fx-padding: 10px;
+  -fx-text-fill: gray;
+  -fx-highlight-fill: #7ecfff;
+}
+
+.ingredient {
+  -fx-text-fill: black;
+  -fx-background-color:
+  -fx-control-inner-background;
+  -fx-padding: 0;
+}
+
+.portion {
+  -fx-text-fill: black;
+  -fx-background-color:
+  -fx-control-inner-background;
+  -fx-padding: 0;
+  -fx-color: black;
+}
+

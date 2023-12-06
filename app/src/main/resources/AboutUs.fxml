@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="basePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="729.0" style="-fx-background-color: #white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.HelpCardController">
+   <children>
+      <Label layoutX="73.0" layoutY="165.0" prefHeight="38.0" prefWidth="128.0" text="Product Owner">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="464.0" prefHeight="38.0" prefWidth="135.0" text="Backend Manager">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" layoutY="598.0" prefHeight="38.0" prefWidth="121.0" text="Recipe Inspector">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="598.0" prefHeight="38.0" prefWidth="193.0" text="Content Creation Manager">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="322.0" prefHeight="38.0" prefWidth="143.0" text="Project Manager">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="461.0" prefHeight="38.0" prefWidth="98.0" text="Team Leader">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="325.0" prefHeight="38.0" prefWidth="193.0" text="Database Administrator">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="320.0" prefHeight="38.0" prefWidth="128.0" text="UI &amp; UX Manager">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="303.0" prefHeight="38.0" prefWidth="128.0" text="Amol Kaushik">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="444.0" prefHeight="38.0" prefWidth="193.0" text="Mohammad Mufid Alaa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="301.0" prefHeight="38.0" prefWidth="212.0" text="Chanuka Samarasinghage">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="299.0" prefHeight="38.0" prefWidth="135.0" text="Benoit Dervieux">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="449.0" layoutY="444.0" prefHeight="38.0" prefWidth="193.0" text="Mutondo Wa Kahembi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="170.0" layoutY="579.0" prefHeight="38.0" prefWidth="176.0" text="André Velkov Janusev">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="579.0" prefHeight="38.0" prefWidth="128.0" text="Dhruv Gulabani">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="144.0" prefHeight="38.0" prefWidth="212.0" text="Tobias Andersson Gidlund">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="142.0" prefHeight="38.0" prefWidth="98.0" text="Léa Le Gallo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="163.0" prefHeight="38.0" prefWidth="193.0" text="Product Liasoning Officer">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="81.0" fitWidth="79.0" layoutX="96.0" layoutY="65.0" pickOnBounds="true">
+         <image>
+            <Image url="@about_us_img/Tobias.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="79.0" layoutX="522.0" layoutY="65.0" pickOnBounds="true">
+         <image>
+            <Image url="@about_us_img/Lea.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="98.0" layoutX="69.0" layoutY="226.0" pickOnBounds="true">
+         <image>
+            <Image url="@about_us_img/Chanu.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="71.0" layoutX="321.0" layoutY="226.0" pickOnBounds="true">
+         <image>
+            <Image url="@about_us_img/Ben.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="98.0" layoutX="562.0" layoutY="218.0" pickOnBounds="true">
+         <image>
+            <Image url="@about_us_img/Amol.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="98.0" layoutX="122.0" layoutY="366.0" pickOnBounds="true">
+         <image>
+            <Image url="@about_us_img/MMA.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="98.0" layoutX="488.0" layoutY="367.0" pickOnBounds="true">
+         <image>
+            <Image url="@about_us_img/Kevin.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="98.0" layoutX="205.0" layoutY="503.0" pickOnBounds="true">
+         <image>
+            <Image url="@about_us_img/Andre.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="98.0" layoutX="412.0" layoutY="503.0" pickOnBounds="true">
+         <image>
+            <Image url="@about_us_img/Dhruv.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1.0" layoutY="630.0" prefHeight="21.0" prefWidth="193.0" text="Source:- all images are taken from google">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="287.0" layoutY="5.0" prefHeight="27.0" prefWidth="143.0" text="COURSE 1DV508">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="238.0" layoutX="227.0" layoutY="28.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/Recipro%20logo%203.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

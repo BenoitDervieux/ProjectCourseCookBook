@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="793.0" prefWidth="305.0" styleClass="white-background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.LeftMenuController">
+   <children>
+      <VBox alignment="CENTER_LEFT" prefHeight="323.0" prefWidth="354.0" spacing="30.0">
+         <children>
+            <HBox fx:id="homeButton" alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="288.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/Home.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Home">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="weekSelection" alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/weeklyList.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Week's selection">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="browseButton" alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/Browse.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Browse">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="mouse-moved" />
+                  <String fx:value="selected" />
+               </styleClass>
+            </HBox>
+            <HBox fx:id="byIngredientButton" alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/ingredients.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="By ingredients">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox fx:id="byTagButton" alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/Tag.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="By tags">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="30.0" left="30.0" />
+         </VBox.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <Separator prefWidth="200.0" />
+      <VBox prefHeight="152.0" prefWidth="352.0" spacing="30.0">
+         <children>
+            <HBox fx:id="newRecipe" alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="360.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/create%20new%20recipe.png" />
+                     </image>
+                  </ImageView>
+                  <Label graphicTextGap="1.0" prefHeight="52.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Create a new recipe&#10;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="5.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox fx:id="weeklyDinnerList" alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="360.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/create%20new%20recipe.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="30.0" prefWidth="260.0" stylesheets="@MenuBar.css" text="Create a weekly dinner list&#10;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="30.0" top="30.0" />
+         </padding>
+      </VBox>
+      <Separator prefWidth="200.0" />
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label prefHeight="37.0" prefWidth="385.0" stylesheets="@MenuBar.css" text="Weekly routines">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@styles.css">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="393.0" styleClass="mouse-moved" stylesheets="@MenuBar.css" text="Beach body without constraint">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@styles.css">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="393.0" styleClass="mouse-moved" stylesheets="@MenuBar.css" text="Get fit or get lost">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@styles.css">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="393.0" styleClass="mouse-moved" stylesheets="@MenuBar.css" text="My secret pleasures">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Separator prefWidth="200.0" />
+      <VBox prefHeight="172.0" prefWidth="305.0">
+         <children>
+            <HBox fx:id="shoppingList" alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0" styleClass="mouse-moved" stylesheets="@MenuBar.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/Shopping%20Cart.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Shopping list">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="30.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

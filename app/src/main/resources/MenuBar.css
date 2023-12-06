@@ -1,0 +1,36 @@
+.label {
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-text-weight: bold;
+}
+
+.white-background {
+    -fx-background-color: #fff;
+}
+
+.transparent {
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.round-layout {
+    -fx-border-radius: 50;
+    -fx-border-color: #d7d7d7;
+}
+
+.selected {
+    -fx-background-color: #f3f3f3;
+}
+
+.mouse-moved: hover{
+    -fx-background-color: #e4e4e4;
+}
+
+.button {
+    -fx-background-radius: 40;
+    -fx-background-color: #fab005;
+}
+
+
+.button: pressed {
+    -fx-background-color: #FFC700;
+}
+

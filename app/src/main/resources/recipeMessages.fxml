@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.sendRecipeController">
+   <children>
+      <Label alignment="CENTER" layoutX="105.0" layoutY="14.0" prefHeight="17.0" prefWidth="153.0" text="Send Recipe">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox fx:id="messageVBox" layoutY="49.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="391.0" spacing="5.0">
+         <children>
+            <HBox fx:id="userHBox" prefHeight="100.0" prefWidth="200.0" spacing="3.0">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="173.0" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="userVBox" prefHeight="244.0" prefWidth="159.0" spacing="10.0" style="-fx-border-color: lightblue;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="182.0" text="Select users">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+               <padding>
+                  <Insets left="25.0" right="1.0" />
+               </padding>
+            </HBox>
+            <Label prefHeight="20.0" prefWidth="223.0" text="Message:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="textMessage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="113.0" prefWidth="270.0" promptText="Write a message...">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="40.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="sentLabel" alignment="CENTER" layoutX="1.0" layoutY="464.0" prefHeight="17.0" prefWidth="390.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="sendButton" layoutX="143.0" layoutY="490.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" stylesheets="@Button.css" text="Send recipe">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

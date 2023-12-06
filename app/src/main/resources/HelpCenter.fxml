@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="helpAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="850.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.GetHelpController">
+   <children>
+      <Label layoutX="24.0" layoutY="22.0" text="Help Center">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Text layoutX="25.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the help center.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchBar" alignment="CENTER" layoutX="27.0" layoutY="136.0" prefHeight="31.0" prefWidth="338.0" promptText="Search Help Keyword" style="-fx-background-color: LIGHTGREY; -fx-background-radius: 10;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="tutorial" alignment="CENTER" layoutX="28.0" layoutY="179.0" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #adb5bd; -fx-background-radius: 5 5 0 0;" text="Tutorial" textFill="#ececec">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="contact" alignment="CENTER" layoutX="120.0" layoutY="179.0" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #adb5bd; -fx-alignment: center; -fx-background-radius: 5 5 0 0;" text="About Us" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ScrollPane fx:id="helpScroll" layoutX="27.0" layoutY="206.0" prefHeight="557.0" prefWidth="729.0" stylesheets="@ScrollBar.css" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+.topbar-container {
+  -fx-background-color: rgba(62, 34, 119, 0.067);
+
+}
+
+.title-label {
+  -fx-background-color: #0000;
+  -fx-font-weight: bold;
+  -fx-font-size: 24;
+}
+
+.search-text {
+  -fx-border-radius: 50 50 50 50;
+  -fx-background-radius: 50 50 50 50;
+  -fx-focus-color: none;
+  -fx-background-color: #6e787d39;
+  -fx-font-size: 16;
+  -fx-text-fill: black;
+  -fx-font-padding: 8px 32px 8px 32px;
+
+ }

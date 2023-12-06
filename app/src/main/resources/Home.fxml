@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1200.0" style="-fx-background-color: white;" styleClass="topbar-container" stylesheets="@TopBar.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.MainController">
+   <children>
+      <ScrollPane fx:id="cardScroll" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="310.0" layoutY="80.0" prefHeight="793.0" prefWidth="890.0" style="-fx-background-color: white; -fx-border-color: F2F2F2;" stylesheets="@ScrollBar.css" vbarPolicy="ALWAYS">
+         <content>
+            <AnchorPane id="cardAnchorCSS" fx:id="cardAnchor" focusTraversable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="790.0" prefWidth="865.0" style="-fx-background-color: white;">
+               <padding>
+                  <Insets left="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+         </content>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </ScrollPane>
+      <VBox layoutY="80.0" prefHeight="793.0" prefWidth="305.0" style="-fx-background-color: white;">
+         <children>
+            <VBox fx:id="mainSelection" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="323.0" prefWidth="298.0" spacing="20.0">
+               <children>
+                  <HBox fx:id="homeButton" alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="40.0" prefWidth="0.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/Home.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="homeLabel" prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Home">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <stylesheets>
+                        <URL value="@HBoxPressed.css" />
+                        <URL value="@mouseMove.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="hbox-pressed" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="weekSelection" alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="40.0" prefWidth="0.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/weeklyList.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="weekLabel" prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Week's selection">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <stylesheets>
+                        <URL value="@HBoxPressed.css" />
+                        <URL value="@mouseMove.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="hbox-pressed" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="browseButton" alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="40.0" prefWidth="0.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/Browse.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="browseLabel" prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Browse">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <stylesheets>
+                        <URL value="@HBoxPressed.css" />
+                        <URL value="@mouseMove.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="hbox-pressed" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="byIngredientButton" alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="40.0" prefWidth="0.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/ingredients.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="ingredientsLabel" prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="By ingredients">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <stylesheets>
+                        <URL value="@HBoxPressed.css" />
+                        <URL value="@mouseMove.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="hbox-pressed" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="byTagButton" alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="40.0" prefWidth="0.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/Tag.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="tagsLabel" prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="By tags">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <stylesheets>
+                        <URL value="@HBoxPressed.css" />
+                        <URL value="@mouseMove.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="hbox-pressed" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="71.0" prefWidth="306.0" spacing="20.0">
+               <children>
+                  <HBox fx:id="newRecipe" alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="40.0" prefWidth="0.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/create%20new%20recipe.png" />
+                           </image>
+                        </ImageView>
+                        <Label graphicTextGap="1.0" prefHeight="52.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Create a new recipe&#10;">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <stylesheets>
+                        <URL value="@HBoxPressed.css" />
+                        <URL value="@mouseMove.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="hbox-pressed" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="30.0" top="20.0" />
+               </padding>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="172.0" prefWidth="305.0">
+               <children>
+                  <HBox fx:id="shoppingList" alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="249.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@util/Shopping%20Cart.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="35.0" prefWidth="232.0" stylesheets="@MenuBar.css" text="Shopping list">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <stylesheets>
+                        <URL value="@HBoxPressed.css" />
+                        <URL value="@mouseMove.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="hbox-pressed" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="30.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox fx:id="topBarContainer" alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1200.0" style="-fx-alignment: center; -fx-spacing: 30; -fx-background-color: #0000;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1200.0" style="-fx-alignment: center; -fx-spacing: 30; -fx-background-color: #0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.TopBarController">
+   <children>
+      <Label alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="title-label" stylesheets="@TopBar.css" text="RECIPRO">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <HBox.margin>
+            <Insets right="120.0" />
+         </HBox.margin>
+      </Label>
+      <TextField fx:id="searchBar" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="500.0" promptText="Enter term to search" styleClass="search-text">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </HBox.margin>
+      </TextField>
+      <Label fx:id="nameLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #0000;" text="User Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="30.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" />
+      <ImageView fx:id="menuIcon" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#openMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@util/menu.png" />
+         </image>
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+      </ImageView>
+   </children>
+</HBox>

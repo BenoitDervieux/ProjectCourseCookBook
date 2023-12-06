@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="encorePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white;" styleClass="topbar-container" stylesheets="@TopBar.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.TopBarControllerSearch">
+   <children>
+      <Rectangle fx:id="rect" arcHeight="5.0" arcWidth="5.0" fill="#434343" layoutY="80.0" onMouseClicked="#unfocus" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="1200.0" />
+      <VBox fx:id="suggestionBox" layoutX="356.0" layoutY="67.0" prefHeight="0.0" prefWidth="500.0" />
+      <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1200.0" style="-fx-alignment: center; -fx-spacing: 30; -fx-background-color: #0000;">
+         <children>
+            <ImageView fx:id="logo" fitHeight="61.0" fitWidth="200.0">
+               <image>
+                  <Image url="@images/Recipro%20logo%203.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="searchBar" alignment="CENTER" onMouseClicked="#opac" prefHeight="20.0" prefWidth="550.0" promptText="Enter term to search " styleClass="search-text">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="-4.0" left="64.0" right="32.0" top="-4.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="nameLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #0000;" text="User Name">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageView" fitHeight="30.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" />
+            <ImageView fx:id="menuIcon" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#openMenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@util/menu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

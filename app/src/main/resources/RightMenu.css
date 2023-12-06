@@ -1,0 +1,9 @@
+.adminLabel {
+    -fx-background-color: transparent;
+}
+
+.adminLabel:hover {
+    -fx-background-color:#D3D3D3;
+    -fx-font-weight : 500;
+    -fx-font-size : 24;
+}

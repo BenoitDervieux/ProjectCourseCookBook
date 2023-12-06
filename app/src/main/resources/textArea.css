@@ -1,0 +1,26 @@
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-text-box-border: transparent;
+    -fx-text-alignment: left;
+  
+  }
+  
+  .text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+  }
+  
+  .text-area:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+  }
+  
+  .text-area:focused {
+    -fx-highlight-fill: white;
+  }
+  
+  .text-area .content {
+    -fx-padding: 10px;
+    -fx-text-fill: gray;
+    -fx-highlight-fill: #7ecfff;
+  }
+  

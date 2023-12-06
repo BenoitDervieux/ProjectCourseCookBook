@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="161.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.Controller.TopBarController.java">
+   <children>
+      <VBox layoutX="1.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="161.0">
+         <children>
+            <ImageView fx:id="recipeImageV" fitHeight="109.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="152.0">
+               <children>
+                  <Label fx:id="recipeName" prefHeight="35.0" prefWidth="143.0" text="Pot au feu">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="favouriteButton" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/empty_heart.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="summaryLabel" prefHeight="39.0" prefWidth="196.0" text="French stew with meat&#10;and vegetables" textFill="#737373">
+               <font>
+                  <Font name="Roboto Light" size="12.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="15.0" spacing="5.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <ImageView fx:id="oneStar" fitHeight="10.0" fitWidth="10.0" onMouseClicked="#oneStarClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="twoStar" fitHeight="10.0" fitWidth="10.0" onMouseClicked="#twoStarClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="threeStar" fitHeight="10.0" fitWidth="10.0" onMouseClicked="#threeStarClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fourStar" fitHeight="10.0" fitWidth="10.0" onMouseClicked="#fourStarClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fiveStar" fitHeight="10.0" fitWidth="10.0" onMouseClicked="#fiveStarClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@util/star.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Button fx:id="addButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="14.0" prefWidth="63.0" stylesheets="@MenuBar.css" text="ADD" textAlignment="CENTER">
+               <font>
+                  <Font name="Roboto Bold" size="8.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</Pane>

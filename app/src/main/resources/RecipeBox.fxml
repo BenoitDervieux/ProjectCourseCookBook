@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="recipeStack" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controller.RecipeBoxController">
+   <children>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="271.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="177.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.11999999731779099" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Pane fx:id="recipeCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="161.0">
+         <children>
+            <VBox layoutX="1.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="161.0">
+               <children>
+                  <ImageView fx:id="recipeImageV" fitHeight="109.0" fitWidth="155.0" pickOnBounds="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="152.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="recipeName" prefHeight="35.0" prefWidth="196.0" text="Pot au feu" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <StackPane fx:id="hearts" prefHeight="15.0" prefWidth="15.0">
+                           <children>
+                              <ImageView fx:id="favouriteButton" fitHeight="15.0" fitWidth="15.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@util/empty_heart.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="removeFavouriteButton" fitHeight="15.0" fitWidth="15.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@util/redHeart.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <Label fx:id="summaryLabel" prefHeight="39.0" prefWidth="196.0" text="French stew with meat and vegetables&#10;" textFill="#737373" wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Roboto Light" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="12.0" spacing="5.0">
+                     <children>
+                        <SVGPath fx:id="oneStar" content="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" scaleX="0.8" scaleY="0.8" />
+                        <SVGPath fx:id="twoStar" content="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" scaleX="0.8" scaleY="0.8" />
+                        <SVGPath fx:id="threeStar" content="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" scaleX="0.8" scaleY="0.8" />
+                        <SVGPath fx:id="fourStar" content="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" scaleX="0.8" scaleY="0.8" />
+                        <SVGPath fx:id="fiveStar" content="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" scaleX="0.8" scaleY="0.8" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-5.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="addButton" alignment="CENTER" layoutX="1.0" layoutY="221.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" style="-fx-font-weight: 700;" stylesheets="@MenuBar.css" text="ADD" textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="shareButton" alignment="CENTER" layoutX="127.0" layoutY="221.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="40.0" style="-fx-background-color: transparent;" stylesheets="@MenuBar.css" textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@images/paper-plane%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</StackPane>
